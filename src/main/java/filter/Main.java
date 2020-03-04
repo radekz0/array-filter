@@ -14,8 +14,8 @@ public class Main {
 
         switch(filterType.toLowerCase()){
             case "prime numbers filter":
-                PrimeNumbersFilter primeNumbersFilter = new PrimeNumbersFilter();
-                primeNumbersFilter.filterArray();
+                Filter primeNumbersFilter = new PrimeNumbersFilter();
+                primeNumbersFilter.filter();
                 break;
             default:
                 System.out.println("Wrong type of filter.");
