@@ -2,6 +2,6 @@ package filter;
 
 import java.util.List;
 
-public interface Filter {
+interface Filter {
     List<Integer> filter();
 }

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class PrimeNumbersFilter implements Filter {
+class PrimeNumbersFilter implements Filter {
     public List<Integer> filter() {
         List<Integer> primeNumberList = IntStream.rangeClosed(1, 100).filter(PrimeNumbersFilter::isPrimeNumber).boxed().collect(Collectors.toList());
         System.out.println(primeNumberList);
