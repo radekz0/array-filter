@@ -1,5 +1,6 @@
 package filter;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +16,8 @@ public class Main {
         switch(filterType.toLowerCase()){
             case "prime numbers filter":
                 Filter primeNumbersFilter = new PrimeNumbersFilter();
-                primeNumbersFilter.filter();
+                List<Integer> primeNumbersList= primeNumbersFilter.filter();
+                System.out.println(primeNumbersList);
                 break;
             default:
                 System.out.println("Wrong type of filter.");
